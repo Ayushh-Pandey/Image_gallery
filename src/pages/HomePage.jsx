@@ -43,7 +43,7 @@ const HomePage = () => {
 
     const theme = useTheme();
 
-    const { data, error, isLoading, isFetching, isSuccess, isUninitialized } = useGetImageByTagQuery(query?.length ? { query, page } : 'nature');
+    const { data, error, isLoading, isFetching, isSuccess, isUninitialized } = useGetImageByTagQuery(query?.length ? { query, page } : '');
 
 
     if (data) {
